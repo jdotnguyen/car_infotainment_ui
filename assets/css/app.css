@@ -1,13 +1,13 @@
 /* Body */
 body {
 	background-color:#101010;
-	font-family: 'Lato';
+	font-family: 'Raleway';
 	font-weight:lighter;
 }
 
 .app-page {
 	display:none;
-	margin-top:80px;
+	margin-top:59px;
 }
 
 .info-top {
@@ -39,6 +39,11 @@ body {
 	font-size:3em;
 	padding:0 15px 0 20px;
 	line-height:59px;
+}
+
+.info-text.info-time {
+    position: relative;
+    top: -4px;
 }
 
 /*
@@ -86,6 +91,7 @@ body {
 
 .card-ui .notification-badge {
 	float:right;
+	font-size:2em;
 }
 
 .card-ui > .fa {
@@ -177,7 +183,7 @@ body {
 }
 
 .play-controls-btn {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border: 1px solid #606060;
     border-radius: 4px;
@@ -188,6 +194,85 @@ body {
     background: linear-gradient(#000000, #202020);
 }
 .play-controls-btn:hover, .play-controls-btn.active {
+	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ab2424, #101010); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ab2424, #101010); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ab2424, #101010); /* Standard syntax */
+}
+
+
+/*
+ *
+ * NOTIFICATIONS PAGE
+ *
+ */
+.row.notifications-row {
+    margin: 0;
+}
+
+.notification-list-item, .notification-list-item-empty {
+    padding: 15px 20px;
+    border-bottom: 1px solid #606060;
+    color: #ffffff;
+    font-size: 2em;
+}
+.notification-list-item:hover {
+	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ab2424, #101010); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ab2424, #101010); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ab2424, #101010); /* Standard syntax */
+}
+
+.notification-list-item-empty {
+	display:none;
+}
+
+.notification-list-item:first-child {
+    border-top: 1px solid #606060;
+}
+
+.notification-list-item .fa {
+    padding-right: 20px;
+}
+
+.notification-clear-btn {
+	position:relative;
+	top:-2px;
+}
+
+
+/*
+ *
+ * SETTINGS PAGE 
+ *
+ */
+.settings-row {
+	padding:0 0 40px 0;
+}
+
+.settings-section {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.settings-section-header {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.settings-section-list-btn {
+    padding: 20px;
+    border-radius:4px;
+    border: 1px solid #606060;
+    text-align:center;
+    font-size: 20px;
+    background: -webkit-linear-gradient(#000000, #202020);
+    background: -o-linear-gradient(#000000, #202020);
+    background: -moz-linear-gradient(#000000, #202020);
+    background: linear-gradient(#000000, #202020);
+}
+.settings-section-list-btn:hover, .settings-section-list-btn.active {
 	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ab2424, #101010); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#ab2424, #101010); /* For Firefox 3.6 to 15 */

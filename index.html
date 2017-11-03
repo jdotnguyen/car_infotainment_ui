@@ -10,7 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
     <!-- Custom Font Import -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
 
     <!-- Custom Page CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
@@ -36,7 +36,7 @@
       <div class="pull-right">
         <span class="fa fa-volume-up fa-3x"></span>
         <span class="fa fa-wifi fa-3x"></span>
-        <span class="info-text info-time">19:14</span>
+        <span class="info-text info-time"></span>
       </div>
     </div>
 
@@ -54,10 +54,10 @@
         </div>
 
         <div class="col-md-3">
-          <div class="card-ui" id="card-ui-communication">
-            <span class="fa fa-globe fa-5x"></span>
+          <div class="card-ui" id="card-ui-status">
+            <span class="fa fa-car fa-5x"></span>
             <span class="card-ui-title">
-              Communication
+              Vehicle Status
             </span>
           </div>
         </div>
@@ -168,19 +168,109 @@
       </div>
     </div>
 
-    <!-- Communication -->
-    <div class="app-page communication-page">
+    <!-- status -->
+    <div class="app-page status-page">
       
     </div>
 
     <!-- Notifications -->
     <div class="app-page notifications-page">
-      
+      <div class="row notifications-row">
+
+        <div class="notification-list-item-empty">
+          There are currently no new notifications.
+        </div>
+
+        <div class="notification-list-item">
+          <span class="fa fa-warning"></span>Oil level low
+          <button class="btn btn-lg btn-danger pull-right notification-clear-btn">X</button>
+        </div>
+
+        <div class="notification-list-item">
+          <span class="fa fa-warning"></span>Front driver headlight malfunction
+          <button class="btn btn-lg btn-danger pull-right notification-clear-btn">X</button>
+        </div>
+
+        <div class="notification-list-item">
+          <span class="fa fa-warning"></span>High battery drain
+          <button class="btn btn-lg btn-danger pull-right notification-clear-btn">X</button>
+        </div>
+
+        <div class="notification-list-item">
+          <span class="fa fa-warning"></span>Date/Time not set
+          <button class="btn btn-lg btn-danger pull-right notification-clear-btn">X</button>
+        </div>
+
+        <div class="notification-list-item">
+          <span class="fa fa-warning"></span>Rear passenger tail light malfunction
+          <button class="btn btn-lg btn-danger pull-right notification-clear-btn">X</button>
+        </div>
+
+      </div>
     </div>
 
     <!-- Settings -->
     <div class="app-page settings-page">
-      
+
+      <div class="row settings-row">
+        <div class="col-md-6">
+          <div class="settings-section">
+            <span class="settings-section-header">General</span>
+            <br>
+
+            <div class="col-md-6">
+              <div class="settings-section-list-btn">
+                Date/Time
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="settings-section-list-btn">
+                Language
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row settings-row">
+        <div class="col-md-6">
+          <div class="settings-section">
+            <span class="settings-section-header">Sound</span>
+            <br>
+
+            <div class="col-md-6">
+              <div class="settings-section-list-btn">
+                Basic Settings
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="settings-section-list-btn">
+                Equalizer
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="settings-section">
+            <span class="settings-section-header">Display</span>
+            <br>
+
+            <div class="col-md-6">
+              <div class="settings-section-list-btn">
+                Brightness
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

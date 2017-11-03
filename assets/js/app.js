@@ -1,15 +1,40 @@
+/* Universal variables */
+var notifications = 0;
+
 /* Document Ready */
 $(document).ready(function() {
 	/* Show home page */
 	$('.home-page').fadeIn();
 
 	/* Add click handlers */
+	activateClock();
 	addHomePageClickHandlers();
 	addEntertainmentPageClickHandlers();
-	addCommunicationPageClickHandlers();
+	addVehicleStatusPageClickHandlers();
 	addNotificationPageClickHandlers();
 	addSettingsPageClickHandlers();
+	updateNotifications();
 });
+
+/* Activate live clock */
+activateClock = function () {
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	m = checkTime(m);
+
+	$('.info-time').html(h + ":" + m);
+
+	var t = setTimeout(activateClock, 500);
+};
+
+/* Subfunction of activate */
+checkTime = function (i) {
+	if (i < 10) {
+		i = "0" + i
+	};
+	return i;
+};
 
 /* Home page handlers */
 addHomePageClickHandlers = function () {
@@ -25,8 +50,8 @@ addHomePageClickHandlers = function () {
 			case "card-ui-entertainment":
 				$('.entertainment-page').fadeIn();
 				break;
-			case "card-ui-communication":
-				$('.communication-page').fadeIn();
+			case "card-ui-status":
+				$('.status-page').fadeIn();
 				break;
 			case "card-ui-notifications":
 				$('.notifications-page').fadeIn();
@@ -100,46 +125,41 @@ addEntertainmentPageClickHandlers = function () {
 		$('.play-controls-btn').removeClass('active');
 
 		/* Style each section accordingly */
-		switch(id) {
-			case "play-controls-previous":
-				/* Add active class to button */
-				$('#' + id).addClass('active');
-				break;
-			case "play-controls-backward":
-				/* Add active class to button */
-				$('#' + id).addClass('active');
-				break;
-			case "play-controls-play":
-				/* Add active class to button */
-				$('#' + id).addClass('active');
-				break;
-			case "play-controls-forward":
-				/* Add active class to button */
-				$('#' + id).addClass('active');
-				break;
-			case "play-controls-next":
-				/* Add active class to button */
-				$('#' + id).addClass('active');
-				break;
-			case "play-controls-stop":
-				/* Add active class to button */
-				$('#' + id).addClass('active');
-				break;
-		}
+		$('#' + id).addClass('active');
 	});
 };
 
-/* Communication page handlers */
-addCommunicationPageClickHandlers = function () {
+/* Vehicle Status page handlers */
+addVehicleStatusPageClickHandlers = function () {
 
 };
 
 /* Notification page handlers */
 addNotificationPageClickHandlers = function () {
-
+	/* Clear notification button */
+	$('.notification-clear-btn').click(function() {
+		$(this).parent().remove();
+		updateNotifications();
+	});
 };
 
 /* Settings page handlers */
 addSettingsPageClickHandlers = function () {
 
+};
+
+/* Update notifications */
+updateNotifications = function () {
+	/* Notification count */
+	notifications = $('.notification-list-item').length;
+	$('.notification-badge').html(notifications);
+
+	/* Hide the badge if there's 0 notifications */
+	if (notifications == 0) {
+		$('.notification-badge').hide();
+		$('.notification-list-item-empty').fadeIn();
+	} else {
+		$('.notification-badge').show();
+		$('.notification-list-item-empty').hide();
+	}
 };
