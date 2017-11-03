@@ -34,11 +34,8 @@
       </div>
       <!-- Status information -->
       <div class="pull-right">
-        <span class="fa fa-warning fa-3x"></span>
-        <span class="info-text info-warning">5</span>
         <span class="fa fa-volume-up fa-3x"></span>
         <span class="fa fa-wifi fa-3x"></span>
-        <span class="fa fa-clock-o fa-3x"></span>
         <span class="info-text info-time">19:14</span>
       </div>
     </div>
@@ -88,29 +85,100 @@
 
     <!-- Entertainment -->
     <div class="app-page entertainment-page">
-      <div class="row">
-        <div class="col-md-6">
+      <!-- Source row -->
+      <div class="row source-row">
+        <div class="col-md-3">
+          <div class="source-btn-body active" id="source-btn-radio">
+            <span class="fa fa-rss fa-4x"></span>
+            <span class="source-btn-text">Radio</span>
+          </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
+          <div class="source-btn-body" id="source-btn-usb">
+            <span class="fa fa-usb fa-4x"></span>
+            <span class="source-btn-text">USB</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="source-btn-body" id="source-btn-bluetooth">
+            <span class="fa fa-bluetooth fa-4x"></span>
+            <span class="source-btn-text">Bluetooth</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="source-btn-body" id="source-btn-satellite">
+            <span class="fa fa-globe fa-4x"></span>
+            <span class="source-btn-text">Satellite Radio</span>
+          </div>
         </div>
       </div>
-      <div class="row">
+
+      <!-- Song info row -->
+      <div class="row song-info-row">
+        <!-- Song info -->
+        <div class="col-md-6">
+          <span class="song-info-span song-info-span-header-radio">HOT 89.9</span>
+          <span class="song-info-span song-info-span-header">Celebration</span>
+          <span class="song-info-span">Kanye West</span>
+          <span class="song-info-span">Late Registration</span>
+        </div>
+
+        <!-- Album art -->
+        <div class="col-md-6">
+          <div class="song-info-album-cover">
+            <span class="fa fa-music fa-5x"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play controls -->
+      <div class="row play-controls-row">
         <div class="col-md-12">
+          <div class="col-md-2">
+            <div class="play-controls-btn" id="play-controls-previous">
+              <span class="fa fa-fast-backward fa-5x"></span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="play-controls-btn" id="play-controls-backward">
+              <span class="fa fa-backward fa-5x"></span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="play-controls-btn active" id="play-controls-play">
+              <span class="fa fa-play fa-5x"></span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="play-controls-btn" id="play-controls-forward">
+              <span class="fa fa-forward fa-5x"></span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="play-controls-btn" id="play-controls-next">
+              <span class="fa fa-fast-forward fa-5x"></span>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="play-controls-btn" id="play-controls-stop">
+              <span class="fa fa-stop fa-5x"></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Entertainment -->
+    <!-- Communication -->
     <div class="app-page communication-page">
       
     </div>
 
-    <!-- Entertainment -->
+    <!-- Notifications -->
     <div class="app-page notifications-page">
       
     </div>
 
-    <!-- Entertainment -->
+    <!-- Settings -->
     <div class="app-page settings-page">
       
     </div>

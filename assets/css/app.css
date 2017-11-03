@@ -2,6 +2,12 @@
 body {
 	background-color:#101010;
 	font-family: 'Lato';
+	font-weight:lighter;
+}
+
+.app-page {
+	display:none;
+	margin-top:80px;
 }
 
 .info-top {
@@ -26,15 +32,20 @@ body {
 
 .info-top .pull-right span.fa {
 	line-height:59px;
-	padding:0 15px;
+	padding:0 25px;
 }
 
 .info-top .pull-right span.info-text {
-	font-size:2em;
-	padding-right:30px;
+	font-size:3em;
+	padding:0 15px 0 20px;
 	line-height:59px;
 }
 
+/*
+ *
+ * HOME PAGE
+ *
+ */
 .app-drawer {
 	position:fixed;
 	z-index:-1;
@@ -62,7 +73,7 @@ body {
 	color:#ffffff;
 	height:500px;
 	bottom:200px;
-	transition-duration:0.6s;
+	transition-duration:0.3s;
 }
 .card-ui:hover {
 	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
@@ -78,9 +89,9 @@ body {
 }
 
 .card-ui > .fa {
-	font-size:10em;
+	font-size:11em;
 	position:absolute;
-	top:100px;
+	top:120px;
 	left:40px;
 	right:40px;
 	text-align:center;
@@ -94,4 +105,91 @@ body {
 	text-align:center;
 	font-size:30px;
 	font-weight:lighter;
+}
+
+
+/*
+ *
+ * ENTERTAINMENT PAGE
+ *
+ */
+.source-row, .song-info-row, .play-controls-row {
+	padding:20px;
+	margin-left:0;
+	margin-right:0;
+}
+
+.source-btn-body {
+	padding:10px 20px;
+	border-radius:4px;
+	border:1px solid #606060;
+	background: -webkit-linear-gradient(#000000, #202020); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000000, #202020); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000000, #202020); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000000, #202020); /* Standard syntax */
+    color:#ffffff;
+}
+.source-btn-body:hover, .source-btn-body.active {
+	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ab2424, #101010); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ab2424, #101010); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ab2424, #101010); /* Standard syntax */
+}
+
+.source-btn-body .source-btn-text {
+	font-size:2em;
+	float:right;
+	line-height:55px;
+}
+
+.song-info-span {
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #909090;
+}
+
+.song-info-span-header-radio {
+	font-size:50px;
+	font-weight:bold;
+}
+
+.song-info-span-header {
+	font-size: 40px;
+	font-weight:bold;
+}
+
+.song-info-album-cover {
+    border-radius: 4px;
+    border: 1px solid #606060;
+    padding: 100px;
+    text-align: center;
+    color:#ffffff;
+    background: -webkit-linear-gradient(#202020, #303030); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#202020, #303030); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#202020, #303030); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#202020, #303030); /* Standard syntax */
+}
+
+.play-controls-row {
+	display:none;
+}
+
+.play-controls-btn {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #606060;
+    border-radius: 4px;
+    color: #ffffff;
+    background: -webkit-linear-gradient(#000000, #202020);
+    background: -o-linear-gradient(#000000, #202020);
+    background: -moz-linear-gradient(#000000, #202020);
+    background: linear-gradient(#000000, #202020);
+}
+.play-controls-btn:hover, .play-controls-btn.active {
+	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ab2424, #101010); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ab2424, #101010); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ab2424, #101010); /* Standard syntax */
 }
