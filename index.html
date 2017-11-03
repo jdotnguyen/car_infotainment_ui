@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Car Infotainment UI</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <!-- Custom Font Import -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+
+    <!-- Custom Page CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom Page JS -->
+    <script src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <!-- Top info bar -->
+    <div class="info-top">
+      <!-- Home button -->
+      <div class="pull-left">
+        <a href="#" id="home-btn" class="fa fa-home fa-3x"></a>
+      </div>
+      <!-- Status information -->
+      <div class="pull-right">
+        <span class="fa fa-warning fa-3x"></span>
+        <span class="info-text info-warning">5</span>
+        <span class="fa fa-volume-up fa-3x"></span>
+        <span class="fa fa-wifi fa-3x"></span>
+        <span class="fa fa-clock-o fa-3x"></span>
+        <span class="info-text info-time">19:14</span>
+      </div>
+    </div>
+
+    <!-- Home page -->
+    <div class="app-page home-page">
+      <!-- Card drawer -->
+      <div class="app-drawer">
+        <div class="col-md-3">
+          <div class="card-ui" id="card-ui-entertainment">
+            <span class="fa fa-music fa-5x"></span>
+            <span class="card-ui-title">
+              Entertainment
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card-ui" id="card-ui-communication">
+            <span class="fa fa-globe fa-5x"></span>
+            <span class="card-ui-title">
+              Communication
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card-ui" id="card-ui-notifications">
+            <span class="notification-badge btn btn-circle btn-icon btn-danger btn-lg">5</span>
+            <span class="fa fa-bell fa-5x"></span>
+            <span class="card-ui-title">
+              Notifications
+            </span>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card-ui" id="card-ui-settings">
+            <span class="fa fa-gear fa-5x"></span>
+            <span class="card-ui-title">
+              Settings
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entertainment -->
+    <div class="app-page entertainment-page">
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+
+    <!-- Entertainment -->
+    <div class="app-page communication-page">
+      
+    </div>
+
+    <!-- Entertainment -->
+    <div class="app-page notifications-page">
+      
+    </div>
+
+    <!-- Entertainment -->
+    <div class="app-page settings-page">
+      
+    </div>
+  </body>
+</html>

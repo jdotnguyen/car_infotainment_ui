@@ -1,0 +1,97 @@
+/* Body */
+body {
+	background-color:#101010;
+	font-family: 'Lato';
+}
+
+.info-top {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:60px;
+	border-bottom:1px solid #606060;
+	color:#ffffff;
+}
+
+#home-btn {
+	color:#ffffff;
+	text-decoration:none;
+	line-height:59px;
+	padding:0 15px;
+}
+#home-btn:hover {
+	background-color:#202020;
+}
+
+.info-top .pull-right span.fa {
+	line-height:59px;
+	padding:0 15px;
+}
+
+.info-top .pull-right span.info-text {
+	font-size:2em;
+	padding-right:30px;
+	line-height:59px;
+}
+
+.app-drawer {
+	position:fixed;
+	z-index:-1;
+	bottom:0;
+	left:0;
+	right:0;
+	height:400px;
+	border-top:1px solid #505050;
+	background: -webkit-linear-gradient(#202020, #303030); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#202020, #303030); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#202020, #303030); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#202020, #303030); /* Standard syntax */
+}
+
+.card-ui {
+	background: -webkit-linear-gradient(#000000, #202020); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000000, #202020); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000000, #202020); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000000, #202020); /* Standard syntax */
+	padding:40px;
+	border:1px solid #606060;
+	border-radius:4px;
+	box-shadow:0 10px 30px #000000;
+	position:relative;
+	color:#ffffff;
+	height:500px;
+	bottom:200px;
+	transition-duration:0.6s;
+}
+.card-ui:hover {
+	background: -webkit-linear-gradient(#ab2424, #101010); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ab2424, #101010); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ab2424, #101010); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ab2424, #101010); /* Standard syntax */
+    bottom:210px;
+    box-shadow:0 10px 80px #000000;
+}
+
+.card-ui .notification-badge {
+	float:right;
+}
+
+.card-ui > .fa {
+	font-size:10em;
+	position:absolute;
+	top:100px;
+	left:40px;
+	right:40px;
+	text-align:center;
+}
+
+.card-ui-title {
+	position:absolute;
+	bottom:40px;
+	left:40px;
+	right:40px;
+	text-align:center;
+	font-size:30px;
+	font-weight:lighter;
+}
