@@ -203,6 +203,20 @@ body {
 
 /*
  *
+ * NAVIGATION PAGE
+ *
+ */
+.navigation-page {
+	position:absolute;
+	top:0;
+	bottom:3px;
+	left:0;
+	right:0;
+}
+
+
+/*
+ *
  * NOTIFICATIONS PAGE
  *
  */

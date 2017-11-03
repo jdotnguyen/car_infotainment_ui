@@ -10,7 +10,7 @@ $(document).ready(function() {
 	activateClock();
 	addHomePageClickHandlers();
 	addEntertainmentPageClickHandlers();
-	addVehicleStatusPageClickHandlers();
+	addNavigationPageClickHandlers();
 	addNotificationPageClickHandlers();
 	addSettingsPageClickHandlers();
 	updateNotifications();
@@ -50,8 +50,8 @@ addHomePageClickHandlers = function () {
 			case "card-ui-entertainment":
 				$('.entertainment-page').fadeIn();
 				break;
-			case "card-ui-status":
-				$('.status-page').fadeIn();
+			case "card-ui-navigation":
+				$('.navigation-page').fadeIn();
 				break;
 			case "card-ui-notifications":
 				$('.notifications-page').fadeIn();
@@ -130,7 +130,7 @@ addEntertainmentPageClickHandlers = function () {
 };
 
 /* Vehicle Status page handlers */
-addVehicleStatusPageClickHandlers = function () {
+addNavigationPageClickHandlers = function () {
 
 };
 
